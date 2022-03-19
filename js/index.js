@@ -38,6 +38,16 @@ document.getElementById('todos_posts').setAttribute('href', 'blog.html');
 document.getElementById("investimentos_poupando_independencia").innerHTML += 
 '<div id="independencia"> <img src="imagens/independencia_financeira.png" width="180px" alt="Independência Financeira"> <h2>Independência Financeira</h2> <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p> <a class="comecar_agora" href="./curso.html">começar agora</a></div>';
 } else {
+    
+//Carregar estilos do index.css para exercício 5
+const headCss = document.getElementsByTagName('head')[0];
+const linkCss = document.createElement('link');
+linkCss.rel = 'stylesheet';
+linkCss.type ='text/css';
+linkCss.href = 'css/index.css';
+
+headCss.appendChild(linkCss);    
+
 //Contato
 //1 - O formulário não está funcionando, o atributo action deve mandar para url sucesso.html
 document.getElementsByTagName('form')[0].action = 'sucesso.html';
